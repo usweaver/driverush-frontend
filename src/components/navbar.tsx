@@ -1,5 +1,5 @@
-import Container from "./container";
-import Hamburger from "./hamburger";
+import Container from "./Container";
+import HamburgerMenu from "./hamburger_menu/HamburgerMenu";
 
 export default function Navbar() {
   return (
@@ -14,8 +14,8 @@ export default function Navbar() {
       </div>
       <div className="relative flex h-20 w-full items-center border-b bg-zinc-50">
         <Container className="flex items-center justify-center">
-          <Hamburger />
-          <span className="font-oxanium text-logo text-3xl font-bold uppercase italic tracking-tighter">
+          <HamburgerMenu />
+          <span className="font-oxanium text-3xl font-bold uppercase italic tracking-tighter text-logo">
             DriveRush
           </span>
         </Container>
