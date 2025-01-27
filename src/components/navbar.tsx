@@ -1,5 +1,6 @@
 import Container from "./Container";
 import HamburgerMenu from "./hamburger_menu/HamburgerMenu";
+import Menu from "./Menu";
 
 export default function Navbar() {
   return (
@@ -13,11 +14,13 @@ export default function Navbar() {
         </Container>
       </div>
       <div className="relative flex h-20 w-full items-center border-b bg-zinc-50">
-        <Container className="flex items-center justify-center">
+        <Container className="flex items-center justify-center md:justify-start">
           <HamburgerMenu />
-          <span className="font-oxanium text-3xl font-bold uppercase italic tracking-tighter text-logo">
+          <span className="pt-1.5 font-oxanium text-3xl font-bold uppercase italic tracking-tighter text-logo">
             DriveRush
           </span>
+          <div className="hidden grow md:block"></div>
+          <Menu />
         </Container>
       </div>
     </>

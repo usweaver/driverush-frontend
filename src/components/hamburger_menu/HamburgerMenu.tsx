@@ -9,7 +9,7 @@ export default function HamburgerMenu() {
   };
 
   return (
-    <div className="absolute left-4">
+    <div className="absolute left-4 md:hidden">
       <button
         onClick={toggleMenu}
         className="flex h-8 w-8 cursor-pointer flex-col items-center justify-center space-y-1.5"
